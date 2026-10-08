@@ -1,0 +1,2399 @@
+{
+  "schema": "laserdot-head-replay-v1",
+  "config_file": "head-replay-config.json",
+  "summary": {
+    "frames": 60,
+    "frames_with_accepted_heads": 59,
+    "accepted_head_predictions": 102,
+    "frames_with_selected_point": 40,
+    "no_selected_point_frames": [
+      19,
+      20,
+      22,
+      23,
+      25,
+      26,
+      28,
+      29,
+      31,
+      32,
+      34,
+      35,
+      37,
+      38,
+      40,
+      41,
+      43,
+      44,
+      51,
+      52
+    ],
+    "source_duration_s": 2.9499303,
+    "single_and_second_pass_frames": {
+      "1": 58,
+      "2": 2
+    },
+    "scope": "Accepted predictions on an existing recorded sequence; no manual labels or general accuracy claim."
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "source_frame": "frame-000.png",
+      "source_sha256": "f0461ed977fe66089909295eeaf0498cb684750d007afcb34df9b96043fd9b08",
+      "time_s": 0.0,
+      "accepted": [
+        {
+          "box": [
+            296.15625,
+            288.318748,
+            320.643753,
+            321.581253
+          ],
+          "confidence": 0.71484375,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          296.15625,
+          288.318748,
+          320.643753,
+          321.581253
+        ],
+        "point": [
+          308.400002,
+          304.950001
+        ],
+        "region": "head",
+        "confidence": 0.71484375,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 192
+    },
+    {
+      "frame": 1,
+      "source_frame": "frame-001.png",
+      "source_sha256": "573df77eb344d482dc5d78d929a3ff9da6d623718665d559116004e11a4f6e1a",
+      "time_s": 0.0492423,
+      "accepted": [
+        {
+          "box": [
+            293.906219,
+            288.369141,
+            320.624969,
+            320.537079
+          ],
+          "confidence": 0.68603516,
+          "class_id": 0
+        },
+        {
+          "box": [
+            109.987785,
+            293.518036,
+            132.590332,
+            321.950653
+          ],
+          "confidence": 0.68066406,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          293.906219,
+          288.369141,
+          320.624969,
+          320.537079
+        ],
+        "point": [
+          307.265594,
+          304.45311
+        ],
+        "region": "head",
+        "confidence": 0.68603516,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 2,
+      "source_frame": "frame-002.png",
+      "source_sha256": "b52dce5a60a7c34d634d839d3d50b34a989a3ca2ed016dbbd53db58117fdcaed",
+      "time_s": 0.0999219,
+      "accepted": [
+        {
+          "box": [
+            293.906219,
+            288.369141,
+            320.624969,
+            320.537079
+          ],
+          "confidence": 0.68164062,
+          "class_id": 0
+        },
+        {
+          "box": [
+            109.958488,
+            293.540009,
+            132.619629,
+            321.92868
+          ],
+          "confidence": 0.68066406,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          293.906219,
+          288.369141,
+          320.624969,
+          320.537079
+        ],
+        "point": [
+          307.265594,
+          304.45311
+        ],
+        "region": "head",
+        "confidence": 0.68164062,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 3,
+      "source_frame": "frame-003.png",
+      "source_sha256": "34f60ca08516b9ade6432fffc12088e17cb055497ed9771f805f9a74c1af28d8",
+      "time_s": 0.1484049,
+      "accepted": [
+        {
+          "box": [
+            292.390137,
+            289.013672,
+            319.797333,
+            321.298798
+          ],
+          "confidence": 0.62060547,
+          "class_id": 0
+        },
+        {
+          "box": [
+            108.229973,
+            293.986786,
+            129.309082,
+            321.950653
+          ],
+          "confidence": 0.63964844,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          292.390137,
+          289.013672,
+          319.797333,
+          321.298798
+        ],
+        "point": [
+          306.093735,
+          305.156235
+        ],
+        "region": "head",
+        "confidence": 0.62060547,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 4,
+      "source_frame": "frame-004.png",
+      "source_sha256": "d68fa8c227dee860f495176839ae149b1f5b2540b4dc24df4bd72ae2d98a6d46",
+      "time_s": 0.1995484,
+      "accepted": [
+        {
+          "box": [
+            291.547852,
+            293.935516,
+            320.170868,
+            326.220673
+          ],
+          "confidence": 0.56201172,
+          "class_id": 0
+        },
+        {
+          "box": [
+            104.794914,
+            300.41745,
+            127.587883,
+            325.363739
+          ],
+          "confidence": 0.60253906,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.547852,
+          293.935516,
+          320.170868,
+          326.220673
+        ],
+        "point": [
+          305.85936,
+          310.078094
+        ],
+        "region": "head",
+        "confidence": 0.56201172,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 5,
+      "source_frame": "frame-005.png",
+      "source_sha256": "41ec063712c83fd23e958ab285597f10f8d6966a7b1755af0c3cde500d68ea68",
+      "time_s": 0.249152,
+      "accepted": [
+        {
+          "box": [
+            291.518555,
+            293.906219,
+            320.200165,
+            326.249969
+          ],
+          "confidence": 0.57177734,
+          "class_id": 0
+        },
+        {
+          "box": [
+            104.882805,
+            300.461395,
+            127.61718,
+            325.319794
+          ],
+          "confidence": 0.60839844,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.518555,
+          293.906219,
+          320.200165,
+          326.249969
+        ],
+        "point": [
+          305.85936,
+          310.078094
+        ],
+        "region": "head",
+        "confidence": 0.57177734,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 6,
+      "source_frame": "frame-006.png",
+      "source_sha256": "712bba8a56f225643440b84a9889752a3d60f8ad90ce518397f5937994025a33",
+      "time_s": 0.2996726,
+      "accepted": [
+        {
+          "box": [
+            291.533203,
+            293.920868,
+            320.185516,
+            326.235321
+          ],
+          "confidence": 0.57080078,
+          "class_id": 0
+        },
+        {
+          "box": [
+            104.83886,
+            300.446747,
+            127.543938,
+            325.334442
+          ],
+          "confidence": 0.60644531,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.533203,
+          293.920868,
+          320.185516,
+          326.235321
+        ],
+        "point": [
+          305.85936,
+          310.078094
+        ],
+        "region": "head",
+        "confidence": 0.57080078,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 7,
+      "source_frame": "frame-007.png",
+      "source_sha256": "78d483902c3cd813710c24c96f0e7b97cf9fdc4cd4026fd9d65bf9002c77c36c",
+      "time_s": 0.3507833,
+      "accepted": [
+        {
+          "box": [
+            291.28418,
+            293.964813,
+            319.96579,
+            326.191376
+          ],
+          "confidence": 0.55712891,
+          "class_id": 0
+        },
+        {
+          "box": [
+            104.802238,
+            300.373505,
+            127.580559,
+            325.407684
+          ],
+          "confidence": 0.59716797,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.28418,
+          293.964813,
+          319.96579,
+          326.191376
+        ],
+        "point": [
+          305.624985,
+          310.078094
+        ],
+        "region": "head",
+        "confidence": 0.55712891,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 8,
+      "source_frame": "frame-008.png",
+      "source_sha256": "297e6691a0cf71762a3014eee75b6449e128d705e082fb7b2e1585c069a4d457",
+      "time_s": 0.3991269,
+      "accepted": [
+        {
+          "box": [
+            291.489258,
+            293.964813,
+            320.229462,
+            326.191376
+          ],
+          "confidence": 0.55859375,
+          "class_id": 0
+        },
+        {
+          "box": [
+            104.860832,
+            300.629852,
+            127.639153,
+            325.620087
+          ],
+          "confidence": 0.60839844,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.489258,
+          293.964813,
+          320.229462,
+          326.191376
+        ],
+        "point": [
+          305.85936,
+          310.078094
+        ],
+        "region": "head",
+        "confidence": 0.55859375,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 9,
+      "source_frame": "frame-009.png",
+      "source_sha256": "0c27497b958a2cba68d6ad428958a42326d17c9cf7e0b655e17f308d1785511a",
+      "time_s": 0.4511609,
+      "accepted": [
+        {
+          "box": [
+            290.258789,
+            288.251953,
+            319.58493,
+            321.591766
+          ],
+          "confidence": 0.60302734,
+          "class_id": 0
+        },
+        {
+          "box": [
+            106.025383,
+            294.448212,
+            127.294914,
+            321.489227
+          ],
+          "confidence": 0.60205078,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          290.258789,
+          288.251953,
+          319.58493,
+          321.591766
+        ],
+        "point": [
+          304.92186,
+          304.92186
+        ],
+        "region": "head",
+        "confidence": 0.60302734,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 10,
+      "source_frame": "frame-010.png",
+      "source_sha256": "9463005c74ae2656ce45197e1a5a85393313d0af050e732d6c35e5d88ed6ec00",
+      "time_s": 0.4998467,
+      "accepted": [
+        {
+          "box": [
+            291.606445,
+            285.219727,
+            319.643524,
+            318.530243
+          ],
+          "confidence": 0.67578125,
+          "class_id": 0
+        },
+        {
+          "box": [
+            105.439445,
+            289.96582,
+            127.529289,
+            315.190399
+          ],
+          "confidence": 0.51416016,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.606445,
+          285.219727,
+          319.643524,
+          318.530243
+        ],
+        "point": [
+          305.624985,
+          301.874985
+        ],
+        "region": "head",
+        "confidence": 0.67578125,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 11,
+      "source_frame": "frame-011.png",
+      "source_sha256": "a840db84b068eee7d29476a5a111eb7057cca72fe5e1320a4b8aa3356ba2dad8",
+      "time_s": 0.5515226,
+      "accepted": [
+        {
+          "box": [
+            291.401367,
+            283.87207,
+            319.848602,
+            317.065399
+          ],
+          "confidence": 0.63525391,
+          "class_id": 0
+        },
+        {
+          "box": [
+            105.849602,
+            289.262695,
+            127.939445,
+            315.424774
+          ],
+          "confidence": 0.53515625,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.401367,
+          283.87207,
+          319.848602,
+          317.065399
+        ],
+        "point": [
+          305.624985,
+          300.468735
+        ],
+        "region": "head",
+        "confidence": 0.63525391,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 12,
+      "source_frame": "frame-012.png",
+      "source_sha256": "a71fc8e02a3bd325f851a75be179c83b883578feb79875c9b6225c2cc7142fc7",
+      "time_s": 0.5989808,
+      "accepted": [
+        {
+          "box": [
+            291.745605,
+            283.725586,
+            319.504364,
+            316.743134
+          ],
+          "confidence": 0.61865234,
+          "class_id": 0
+        },
+        {
+          "box": [
+            106.435539,
+            289.350586,
+            128.291016,
+            315.805634
+          ],
+          "confidence": 0.51660156,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          291.745605,
+          283.725586,
+          319.504364,
+          316.743134
+        ],
+        "point": [
+          305.624985,
+          300.23436
+        ],
+        "region": "head",
+        "confidence": 0.61865234,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 13,
+      "source_frame": "frame-013.png",
+      "source_sha256": "6f57a15a1573afb3870158cd2e779a0f1a9c1de52a4b795fb719cae28a06e57f",
+      "time_s": 0.6506778,
+      "accepted": [
+        {
+          "box": [
+            295.810516,
+            282.744141,
+            322.939423,
+            315.380829
+          ],
+          "confidence": 0.53955078,
+          "class_id": 0
+        },
+        {
+          "box": [
+            109.372551,
+            288.984375,
+            131.799316,
+            316.171844
+          ],
+          "confidence": 0.63818359,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          295.810516,
+          282.744141,
+          322.939423,
+          315.380829
+        ],
+        "point": [
+          309.374969,
+          299.062485
+        ],
+        "region": "head",
+        "confidence": 0.53955078,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 14,
+      "source_frame": "frame-014.png",
+      "source_sha256": "4b5aedfb93d1805450c7930d84312fb4d4e637514a91bd749bc0af273743466e",
+      "time_s": 0.7000639,
+      "accepted": [
+        {
+          "box": [
+            301.413544,
+            281.030273,
+            331.398895,
+            315.219696
+          ],
+          "confidence": 0.59179688,
+          "class_id": 0
+        },
+        {
+          "box": [
+            113.012688,
+            288.815918,
+            134.25293,
+            314.934052
+          ],
+          "confidence": 0.51269531,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          301.413544,
+          281.030273,
+          331.398895,
+          315.219696
+        ],
+        "point": [
+          316.406219,
+          298.124985
+        ],
+        "region": "head",
+        "confidence": 0.59179688,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 15,
+      "source_frame": "frame-015.png",
+      "source_sha256": "8e7bc8ab5ae844bee724c91f95bd39c5b80762e928eb26858d96b42300d3c671",
+      "time_s": 0.7508144,
+      "accepted": [
+        {
+          "box": [
+            315.922821,
+            282.539062,
+            342.202118,
+            313.710907
+          ],
+          "confidence": 0.52832031,
+          "class_id": 0
+        },
+        {
+          "box": [
+            122.087395,
+            289.116211,
+            144.162598,
+            316.040009
+          ],
+          "confidence": 0.60009766,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          315.922821,
+          282.539062,
+          342.202118,
+          313.710907
+        ],
+        "point": [
+          329.062469,
+          298.124985
+        ],
+        "region": "head",
+        "confidence": 0.52832031,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 16,
+      "source_frame": "frame-016.png",
+      "source_sha256": "52295b56a8a0abddc5348a5104c045f36cba5c05ba90787140564550e6ad4e5a",
+      "time_s": 0.7994909,
+      "accepted": [
+        {
+          "box": [
+            326.572235,
+            280.136719,
+            357.802704,
+            317.050751
+          ],
+          "confidence": 0.54931641,
+          "class_id": 0
+        },
+        {
+          "box": [
+            128.986816,
+            288.676758,
+            149.450668,
+            313.666962
+          ],
+          "confidence": 0.50585938,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          326.572235,
+          280.136719,
+          357.802704,
+          317.050751
+        ],
+        "point": [
+          342.187469,
+          298.593735
+        ],
+        "region": "head",
+        "confidence": 0.54931641,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 17,
+      "source_frame": "frame-017.png",
+      "source_sha256": "3213de9000336c0fda9c06dfd7636a109c775f285450e807b40110b25075a230",
+      "time_s": 0.8497407,
+      "accepted": [
+        {
+          "box": [
+            330.205048,
+            285.014648,
+            359.326141,
+            320.141571
+          ],
+          "confidence": 0.47485352,
+          "class_id": 0
+        },
+        {
+          "box": [
+            123.002922,
+            291.196289,
+            145.356445,
+            317.24118
+          ],
+          "confidence": 0.53710938,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          330.205048,
+          285.014648,
+          359.326141,
+          320.141571
+        ],
+        "point": [
+          344.765594,
+          302.57811
+        ],
+        "region": "head",
+        "confidence": 0.47485352,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 18,
+      "source_frame": "frame-018.png",
+      "source_sha256": "1eacf678ed817aa197ec3451a30b998b052af6005a0fdb8540c1bd5547f700d7",
+      "time_s": 0.9008422,
+      "accepted": [
+        {
+          "box": [
+            333.36911,
+            288.325195,
+            363.662079,
+            323.862274
+          ],
+          "confidence": 0.74462891,
+          "class_id": 0
+        },
+        {
+          "box": [
+            114.140617,
+            294.770477,
+            137.34375,
+            323.041962
+          ],
+          "confidence": 0.55078125,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          333.36911,
+          288.325195,
+          363.662079,
+          323.862274
+        ],
+        "point": [
+          348.515594,
+          306.093735
+        ],
+        "region": "head",
+        "confidence": 0.74462891,
+        "internal_track_id": "body-track-1"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 19,
+      "source_frame": "frame-019.png",
+      "source_sha256": "9c15ec355fc17b3b029a23b733b637d8c70f05cc5b42a63b5ca8432cfe1df809",
+      "time_s": 0.9501823,
+      "accepted": [
+        {
+          "box": [
+            298.784149,
+            281.748047,
+            328.87204,
+            318.720673
+          ],
+          "confidence": 0.50634766,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 20,
+      "source_frame": "frame-020.png",
+      "source_sha256": "65c53e95a4a3316b17ef51f11401fe3f582fd01a3db3356688c2e1ddb8e14cfc",
+      "time_s": 0.9995537,
+      "accepted": [
+        {
+          "box": [
+            268.776855,
+            277.5,
+            297.941864,
+            310.312469
+          ],
+          "confidence": 0.33789062,
+          "class_id": 0
+        },
+        {
+          "box": [
+            479.472626,
+            290.024414,
+            496.464813,
+            310.913055
+          ],
+          "confidence": 0.34936523,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 21,
+      "source_frame": "frame-021.png",
+      "source_sha256": "3bae1b0f667eab2633f0baee0d16070ae69f0d053cb685bb61ed53243c2745fb",
+      "time_s": 1.0514941,
+      "accepted": [
+        {
+          "box": [
+            282.539062,
+            279.492188,
+            312.304657,
+            315.820282
+          ],
+          "confidence": 0.35131836,
+          "class_id": 0
+        },
+        {
+          "box": [
+            479.824188,
+            292.807587,
+            498.925751,
+            315.629852
+          ],
+          "confidence": 0.51171875,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          282.539062,
+          279.492188,
+          312.304657,
+          315.820282
+        ],
+        "point": [
+          297.42186,
+          297.656235
+        ],
+        "region": "head",
+        "confidence": 0.35131836,
+        "internal_track_id": "body-track-4"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 22,
+      "source_frame": "frame-022.png",
+      "source_sha256": "ee63c69b336b79577abcad8a2dd999dceaa56b4f82afe9f83effdfbcd63b415b",
+      "time_s": 1.1018918,
+      "accepted": [
+        {
+          "box": [
+            254.76561,
+            281.967773,
+            285.703125,
+            318.500946
+          ],
+          "confidence": 0.35839844,
+          "class_id": 0
+        },
+        {
+          "box": [
+            440.866669,
+            294.345673,
+            458.19577,
+            316.435516
+          ],
+          "confidence": 0.35595703,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 23,
+      "source_frame": "frame-023.png",
+      "source_sha256": "0ce6c63c17b1f8436137d29af1486b039fc82bb02039e98d57b7992cf6edfd40",
+      "time_s": 1.1520897,
+      "accepted": [
+        {
+          "box": [
+            310.583466,
+            287.387695,
+            327.853973,
+            306.987274
+          ],
+          "confidence": 0.37353516,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 24,
+      "source_frame": "frame-024.png",
+      "source_sha256": "c7696036d70be7c14a6c9d5a84ecbc2f5e3423f27565c2f842871dc29cd65dbc",
+      "time_s": 1.2022303,
+      "accepted": [
+        {
+          "box": [
+            315.956253,
+            259.443752,
+            343.293747,
+            296.756248
+          ],
+          "confidence": 0.765625,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          315.956253,
+          259.443752,
+          343.293747,
+          296.756248
+        ],
+        "point": [
+          329.625,
+          278.1
+        ],
+        "region": "head",
+        "confidence": 0.765625,
+        "internal_track_id": "body-track-9"
+      },
+      "reason": "Ready",
+      "passes": 2,
+      "last_scan_scale": 192
+    },
+    {
+      "frame": 25,
+      "source_frame": "frame-025.png",
+      "source_sha256": "53194c5a516a2e4cf0ed41a064b890ab4bb021fe8bc3e55dd729f0f8aa5b94fd",
+      "time_s": 1.2492372,
+      "accepted": [
+        {
+          "box": [
+            340.67868,
+            265.195312,
+            372.290009,
+            301.992157
+          ],
+          "confidence": 0.33618164,
+          "class_id": 0
+        },
+        {
+          "box": [
+            165.146469,
+            277.836914,
+            183.6035,
+            300.131805
+          ],
+          "confidence": 0.49560547,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 26,
+      "source_frame": "frame-026.png",
+      "source_sha256": "851ef39eab01b73caec4b3caf92802234f66fcb8afecb3fe785d73eff94e8690",
+      "time_s": 1.3006624,
+      "accepted": [
+        {
+          "box": [
+            179.897446,
+            277.36084,
+            198.852524,
+            300.13913
+          ],
+          "confidence": 0.53564453,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 27,
+      "source_frame": "frame-027.png",
+      "source_sha256": "b6fd75bbb86b3d306fedb5aa54d36d4e79635b4874c1273ba15c15487cfe0b20",
+      "time_s": 1.3488723,
+      "accepted": [
+        {
+          "box": [
+            194.721664,
+            277.624512,
+            212.85643,
+            299.875458
+          ],
+          "confidence": 0.46069336,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          194.721664,
+          277.624512,
+          212.85643,
+          299.875458
+        ],
+        "point": [
+          203.789047,
+          288.749985
+        ],
+        "region": "head",
+        "confidence": 0.46069336,
+        "internal_track_id": "body-track-13"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 28,
+      "source_frame": "frame-028.png",
+      "source_sha256": "2337ce5cf5a4701a14b1dc0bf30eaa232282a93f069fb8ac0fb12f6ae7f01367",
+      "time_s": 1.3986125,
+      "accepted": [
+        {
+          "box": [
+            209.29686,
+            277.126465,
+            227.343735,
+            299.436005
+          ],
+          "confidence": 0.47875977,
+          "class_id": 0
+        },
+        {
+          "box": [
+            435.190399,
+            263.408203,
+            475.12204,
+            302.841766
+          ],
+          "confidence": 0.41503906,
+          "class_id": 0
+        },
+        {
+          "box": [
+            103.579094,
+            261.679688,
+            138.061523,
+            301.289032
+          ],
+          "confidence": 0.66796875,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 3,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 29,
+      "source_frame": "frame-029.png",
+      "source_sha256": "8aa023e4015ece5f722d0f8db443432f2aefc74b08ff9b08bdbb62e105a02331",
+      "time_s": 1.4501642,
+      "accepted": [
+        {
+          "box": [
+            224.648422,
+            277.485352,
+            242.460922,
+            299.545868
+          ],
+          "confidence": 0.43701172,
+          "class_id": 0
+        },
+        {
+          "box": [
+            135.673828,
+            261.28418,
+            169.013657,
+            300.27829
+          ],
+          "confidence": 0.58837891,
+          "class_id": 0
+        },
+        {
+          "box": [
+            470.375946,
+            263.364258,
+            499.936493,
+            301.010712
+          ],
+          "confidence": 0.78417969,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 3,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 30,
+      "source_frame": "frame-030.png",
+      "source_sha256": "86e193b18458aaf57e56fa1ddba1a290c2dfdd701a82ea715df9de5deea80ec0",
+      "time_s": 1.5024319,
+      "accepted": [
+        {
+          "box": [
+            238.681625,
+            276.972656,
+            254.912094,
+            297.714813
+          ],
+          "confidence": 0.3828125,
+          "class_id": 0
+        },
+        {
+          "box": [
+            162.099594,
+            261.503906,
+            196.025375,
+            300.527313
+          ],
+          "confidence": 0.4453125,
+          "class_id": 0
+        },
+        {
+          "box": [
+            500.068329,
+            263.525391,
+            530.244141,
+            302.724579
+          ],
+          "confidence": 0.6796875,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 3,
+      "selected": {
+        "box": [
+          238.681625,
+          276.972656,
+          254.912094,
+          297.714813
+        ],
+        "point": [
+          246.79686,
+          287.343735
+        ],
+        "region": "head",
+        "confidence": 0.3828125,
+        "internal_track_id": "body-track-21"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 31,
+      "source_frame": "frame-031.png",
+      "source_sha256": "d565e9b4e799860a6ddf7935805ba6fc51a68303a2bfd8571ec62398eb215d44",
+      "time_s": 1.5499774,
+      "accepted": [
+        {
+          "box": [
+            253.051743,
+            276.328125,
+            271.479492,
+            297.890594
+          ],
+          "confidence": 0.31201172,
+          "class_id": 0
+        },
+        {
+          "box": [
+            194.29686,
+            258.383789,
+            229.218735,
+            299.89743
+          ],
+          "confidence": 0.35644531,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 32,
+      "source_frame": "frame-032.png",
+      "source_sha256": "48e555c13ec8e4b012ab8c0f418c530c5f4474da01b7779c39457cec3abe96cb",
+      "time_s": 1.5995461,
+      "accepted": [],
+      "accepted_count": 0,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 2,
+      "last_scan_scale": 1200
+    },
+    {
+      "frame": 33,
+      "source_frame": "frame-033.png",
+      "source_sha256": "b3be73cee3e923dbb22c034e59767cf60600c42edf27974e87b2515a10ff4ccd",
+      "time_s": 1.6489326,
+      "accepted": [
+        {
+          "box": [
+            168.383774,
+            301.552704,
+            210.366196,
+            342.978485
+          ],
+          "confidence": 0.36669922,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          168.383774,
+          301.552704,
+          210.366196,
+          342.978485
+        ],
+        "point": [
+          189.374985,
+          322.265594
+        ],
+        "region": "head",
+        "confidence": 0.36669922,
+        "internal_track_id": "body-track-24"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 34,
+      "source_frame": "frame-034.png",
+      "source_sha256": "0af403ab72c5e5a6452a5dd45c0464aac9224ab0eb39241433aa92dead74902c",
+      "time_s": 1.6992089,
+      "accepted": [
+        {
+          "box": [
+            413.979462,
+            306.313446,
+            433.051727,
+            329.780243
+          ],
+          "confidence": 0.40283203,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 35,
+      "source_frame": "frame-035.png",
+      "source_sha256": "bec434e002b77115ae533a994ee11392293018c25a48da8bbd1e8839dd4e5d90",
+      "time_s": 1.7491769,
+      "accepted": [
+        {
+          "box": [
+            392.885712,
+            297.832001,
+            412.895477,
+            321.855438
+          ],
+          "confidence": 0.64257812,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 36,
+      "source_frame": "frame-036.png",
+      "source_sha256": "fc9b9a6eb6466834577cc61fec5b875603d949b1a17e0bf374971c660f0e2965",
+      "time_s": 1.7991543,
+      "accepted": [
+        {
+          "box": [
+            368.312958,
+            297.246063,
+            388.718231,
+            321.972626
+          ],
+          "confidence": 0.52685547,
+          "class_id": 0
+        },
+        {
+          "box": [
+            479.692352,
+            282.832031,
+            512.182617,
+            323.261688
+          ],
+          "confidence": 0.33374023,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          368.312958,
+          297.246063,
+          388.718231,
+          321.972626
+        ],
+        "point": [
+          378.515594,
+          309.609344
+        ],
+        "region": "head",
+        "confidence": 0.52685547,
+        "internal_track_id": "body-track-27"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 37,
+      "source_frame": "frame-037.png",
+      "source_sha256": "73590db6c50acacdd448fc9c3dbfe797c6d482c518c9b9f2c4cfde1790c0e860",
+      "time_s": 1.8507973,
+      "accepted": [
+        {
+          "box": [
+            348.691376,
+            296.813934,
+            369.433563,
+            322.873505
+          ],
+          "confidence": 0.55126953,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 38,
+      "source_frame": "frame-038.png",
+      "source_sha256": "7d166ff13f489a14b7780eded07e5a323859a00a36b7728d2f9b2c3f62a2c476",
+      "time_s": 1.8995275,
+      "accepted": [
+        {
+          "box": [
+            331.96286,
+            295.898407,
+            351.474579,
+            319.570282
+          ],
+          "confidence": 0.49780273,
+          "class_id": 0
+        },
+        {
+          "box": [
+            482.783173,
+            277.895508,
+            516.591797,
+            322.104462
+          ],
+          "confidence": 0.36352539,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 39,
+      "source_frame": "frame-039.png",
+      "source_sha256": "f2a2646a829ce369ce96ffb95f0a9bec1480d986a2892ed132f9fff8fedfea0d",
+      "time_s": 1.9509499,
+      "accepted": [
+        {
+          "box": [
+            318.808563,
+            292.514648,
+            338.378876,
+            315.922821
+          ],
+          "confidence": 0.41552734,
+          "class_id": 0
+        },
+        {
+          "box": [
+            492.729462,
+            276.357422,
+            527.270508,
+            319.892548
+          ],
+          "confidence": 0.57568359,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          318.808563,
+          292.514648,
+          338.378876,
+          315.922821
+        ],
+        "point": [
+          328.593719,
+          304.218735
+        ],
+        "region": "head",
+        "confidence": 0.41552734,
+        "internal_track_id": "body-track-30"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 40,
+      "source_frame": "frame-040.png",
+      "source_sha256": "58be8807db02a3975255f5f733fb54d22ee7518f168786fd08167d639a607ef5",
+      "time_s": 2.0002184,
+      "accepted": [
+        {
+          "box": [
+            293.349579,
+            288.771973,
+            315.08786,
+            313.571747
+          ],
+          "confidence": 0.38256836,
+          "class_id": 0
+        },
+        {
+          "box": [
+            492.216766,
+            272.519531,
+            528.720703,
+            315.761688
+          ],
+          "confidence": 0.52441406,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 41,
+      "source_frame": "frame-041.png",
+      "source_sha256": "3a2c255bb0659eb9eb5fd113554e6e264d438bd2dc7fb6fb63062fe3bbfd9b9a",
+      "time_s": 2.0491437,
+      "accepted": [
+        {
+          "box": [
+            273.735352,
+            286.933594,
+            299.077118,
+            312.597626
+          ],
+          "confidence": 0.31323242,
+          "class_id": 0
+        },
+        {
+          "box": [
+            494.692352,
+            271.728516,
+            530.932617,
+            318.427704
+          ],
+          "confidence": 0.50244141,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 42,
+      "source_frame": "frame-042.png",
+      "source_sha256": "15f76e61ece0d9995c96b1180aa4e5c21a76f86e4e846aad9f6abb8bcaf8b1a7",
+      "time_s": 2.0996862,
+      "accepted": [
+        {
+          "box": [
+            251.147446,
+            286.933594,
+            273.383789,
+            311.660126
+          ],
+          "confidence": 0.44677734,
+          "class_id": 0
+        },
+        {
+          "box": [
+            494.853485,
+            269.384766,
+            530.771484,
+            314.677704
+          ],
+          "confidence": 0.42602539,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          251.147446,
+          286.933594,
+          273.383789,
+          311.660126
+        ],
+        "point": [
+          262.265617,
+          299.29686
+        ],
+        "region": "head",
+        "confidence": 0.44677734,
+        "internal_track_id": "body-track-33"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 43,
+      "source_frame": "frame-043.png",
+      "source_sha256": "91b9c35a1b60b1d0dc4099078a284843ee395d591d2dcb1df27819609506113d",
+      "time_s": 2.1489422,
+      "accepted": [
+        {
+          "box": [
+            228.354477,
+            281.206055,
+            248.364243,
+            307.075165
+          ],
+          "confidence": 0.41186523,
+          "class_id": 0
+        },
+        {
+          "box": [
+            494.794891,
+            263.4375,
+            528.017578,
+            309.374969
+          ],
+          "confidence": 0.40649414,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 44,
+      "source_frame": "frame-044.png",
+      "source_sha256": "5228fc1904202e4035790810cd21ed4b6ebd424d69441121d89acc7ba36bc6a3",
+      "time_s": 2.1988669,
+      "accepted": [
+        {
+          "box": [
+            215.082993,
+            278.327637,
+            236.791977,
+            306.672333
+          ],
+          "confidence": 0.35717773,
+          "class_id": 0
+        },
+        {
+          "box": [
+            147.392563,
+            253.271469,
+            193.857407,
+            309.228485
+          ],
+          "confidence": 0.45874023,
+          "class_id": 0
+        },
+        {
+          "box": [
+            506.162079,
+            262.03125,
+            541.025391,
+            305.156219
+          ],
+          "confidence": 0.63525391,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 3,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 45,
+      "source_frame": "frame-045.png",
+      "source_sha256": "e2213f996516a5ffe7fa2ef3ba866a87c151b1ee9cd522b875d9c5866619109a",
+      "time_s": 2.2498428,
+      "accepted": [
+        {
+          "box": [
+            496.127899,
+            258.251953,
+            536.05957,
+            304.716766
+          ],
+          "confidence": 0.48217773,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          496.127899,
+          258.251953,
+          536.05957,
+          304.716766
+        ],
+        "point": [
+          516.093735,
+          281.48436
+        ],
+        "region": "head",
+        "confidence": 0.48217773,
+        "internal_track_id": "body-track-28"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 46,
+      "source_frame": "frame-046.png",
+      "source_sha256": "7719308f4ef08b79ac1a4ab30d21f1cb7283e5f68d290994917617f974517080",
+      "time_s": 2.2991227,
+      "accepted": [
+        {
+          "box": [
+            479.208954,
+            258.398438,
+            518.291016,
+            306.914032
+          ],
+          "confidence": 0.57861328,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          479.208954,
+          258.398438,
+          518.291016,
+          306.914032
+        ],
+        "point": [
+          498.749985,
+          282.656235
+        ],
+        "region": "head",
+        "confidence": 0.57861328,
+        "internal_track_id": "body-track-28"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 47,
+      "source_frame": "frame-047.png",
+      "source_sha256": "d4fa1e0810b6fc0b4f45c2fe7e2ca49f75c513c62d03a9e1e2b4b26acc006f46",
+      "time_s": 2.3482556,
+      "accepted": [
+        {
+          "box": [
+            461.381805,
+            260.244141,
+            498.618134,
+            309.287079
+          ],
+          "confidence": 0.43994141,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          461.381805,
+          260.244141,
+          498.618134,
+          309.287079
+        ],
+        "point": [
+          479.999969,
+          284.76561
+        ],
+        "region": "head",
+        "confidence": 0.43994141,
+        "internal_track_id": "body-track-28"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 48,
+      "source_frame": "frame-048.png",
+      "source_sha256": "d641701e5caff67f0f94c0885a915c7d1517a64b9e0fee06485c7ce5e8064cab",
+      "time_s": 2.3990026,
+      "accepted": [
+        {
+          "box": [
+            449.106415,
+            258.500977,
+            491.206024,
+            308.686493
+          ],
+          "confidence": 0.50585938,
+          "class_id": 0
+        },
+        {
+          "box": [
+            103.666985,
+            243.662094,
+            156.254868,
+            305.71286
+          ],
+          "confidence": 0.31225586,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          449.106415,
+          258.500977,
+          491.206024,
+          308.686493
+        ],
+        "point": [
+          470.156219,
+          283.593735
+        ],
+        "region": "head",
+        "confidence": 0.50585938,
+        "internal_track_id": "body-track-28"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 49,
+      "source_frame": "frame-049.png",
+      "source_sha256": "f0be59adb5714d236a808e5f7bc1815f28bcefbaf809c696faedfdbb5c0c7762",
+      "time_s": 2.4487252,
+      "accepted": [
+        {
+          "box": [
+            450.08786,
+            262.265625,
+            490.224579,
+            312.421844
+          ],
+          "confidence": 0.47607422,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          450.08786,
+          262.265625,
+          490.224579,
+          312.421844
+        ],
+        "point": [
+          470.156219,
+          287.343735
+        ],
+        "region": "head",
+        "confidence": 0.47607422,
+        "internal_track_id": "body-track-28"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 50,
+      "source_frame": "frame-050.png",
+      "source_sha256": "7d55bc0a63242a4829164d90c509a8cfb68caf073db2e96ccdefaca6f10213c0",
+      "time_s": 2.4991012,
+      "accepted": [
+        {
+          "box": [
+            468.662079,
+            267.568359,
+            508.21286,
+            316.02536
+          ],
+          "confidence": 0.54638672,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          468.662079,
+          267.568359,
+          508.21286,
+          316.02536
+        ],
+        "point": [
+          488.437469,
+          291.79686
+        ],
+        "region": "head",
+        "confidence": 0.54638672,
+        "internal_track_id": "body-track-28"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 51,
+      "source_frame": "frame-051.png",
+      "source_sha256": "aa8381e29f062c8d62626c566955f86f74325baf2028ea5d68c43a9d481ff1cc",
+      "time_s": 2.5512679,
+      "accepted": [
+        {
+          "box": [
+            499.877899,
+            271.171875,
+            538.87207,
+            318.984344
+          ],
+          "confidence": 0.66015625,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 52,
+      "source_frame": "frame-052.png",
+      "source_sha256": "4d5b7d164ea63233fd75903d187af04e7226fbd86b13d3b360d8f92e319eea1a",
+      "time_s": 2.5993962,
+      "accepted": [
+        {
+          "box": [
+            208.945297,
+            255.937485,
+            267.304688,
+            327.656219
+          ],
+          "confidence": 0.68066406,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": null,
+      "reason": "Current enemy temporarily unavailable",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 53,
+      "source_frame": "frame-053.png",
+      "source_sha256": "b4f13dec4ee4db5c21d8284a0495275d8fa0e0c73cd590f6a7f413a703330a39",
+      "time_s": 2.6499358,
+      "accepted": [
+        {
+          "box": [
+            237.832016,
+            257.285156,
+            299.355438,
+            332.871063
+          ],
+          "confidence": 0.64648438,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          237.832016,
+          257.285156,
+          299.355438,
+          332.871063
+        ],
+        "point": [
+          268.593727,
+          295.07811
+        ],
+        "region": "head",
+        "confidence": 0.64648438,
+        "internal_track_id": "body-track-38"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 54,
+      "source_frame": "frame-054.png",
+      "source_sha256": "d32abd37de2c93303065106e69c36479bc27da5fea09e74f18bdcf206196b2a3",
+      "time_s": 2.6999131,
+      "accepted": [
+        {
+          "box": [
+            258.222656,
+            257.255859,
+            319.277313,
+            332.43161
+          ],
+          "confidence": 0.67578125,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          258.222656,
+          257.255859,
+          319.277313,
+          332.43161
+        ],
+        "point": [
+          288.749985,
+          294.843735
+        ],
+        "region": "head",
+        "confidence": 0.67578125,
+        "internal_track_id": "body-track-38"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 55,
+      "source_frame": "frame-055.png",
+      "source_sha256": "3259018560dfd14f62d7c08c69f59ea6402599ba9eef866d0f69c31274b02a66",
+      "time_s": 2.7505545,
+      "accepted": [
+        {
+          "box": [
+            268.535156,
+            253.242172,
+            333.808563,
+            335.039032
+          ],
+          "confidence": 0.54882812,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 1,
+      "selected": {
+        "box": [
+          268.535156,
+          253.242172,
+          333.808563,
+          335.039032
+        ],
+        "point": [
+          301.17186,
+          294.140602
+        ],
+        "region": "head",
+        "confidence": 0.54882812,
+        "internal_track_id": "body-track-38"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 56,
+      "source_frame": "frame-056.png",
+      "source_sha256": "7520a34657d456b54bb1f16de491022165e9c4236b99a36fbec80bfbf3a94490",
+      "time_s": 2.7997356,
+      "accepted": [
+        {
+          "box": [
+            259.248047,
+            251.835922,
+            328.564423,
+            334.570282
+          ],
+          "confidence": 0.56640625,
+          "class_id": 0
+        },
+        {
+          "box": [
+            494.223602,
+            295.341766,
+            521.088867,
+            329.970673
+          ],
+          "confidence": 0.55273438,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          259.248047,
+          251.835922,
+          328.564423,
+          334.570282
+        ],
+        "point": [
+          293.906235,
+          293.203102
+        ],
+        "region": "head",
+        "confidence": 0.56640625,
+        "internal_track_id": "body-track-38"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 57,
+      "source_frame": "frame-057.png",
+      "source_sha256": "6fb7061d309c92aa9e2ee5f4003a65aab266f5f594199106fecffe7b934c15d0",
+      "time_s": 2.8500805,
+      "accepted": [
+        {
+          "box": [
+            253.242172,
+            251.660141,
+            322.851532,
+            333.808563
+          ],
+          "confidence": 0.58837891,
+          "class_id": 0
+        },
+        {
+          "box": [
+            481.904266,
+            295.136688,
+            507.158173,
+            328.300751
+          ],
+          "confidence": 0.35522461,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          253.242172,
+          251.660141,
+          322.851532,
+          333.808563
+        ],
+        "point": [
+          288.046852,
+          292.734352
+        ],
+        "region": "head",
+        "confidence": 0.58837891,
+        "internal_track_id": "body-track-38"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 58,
+      "source_frame": "frame-058.png",
+      "source_sha256": "0172004cd88132b025d1b491c3b68c8cf7e310212a66195520c96c2bc496e4fc",
+      "time_s": 2.9009469,
+      "accepted": [
+        {
+          "box": [
+            249.785141,
+            252.89061,
+            315.996063,
+            334.921844
+          ],
+          "confidence": 0.66943359,
+          "class_id": 0
+        },
+        {
+          "box": [
+            475.202606,
+            297.114227,
+            500.734833,
+            329.135712
+          ],
+          "confidence": 0.61132812,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          249.785141,
+          252.89061,
+          315.996063,
+          334.921844
+        ],
+        "point": [
+          282.890602,
+          293.906227
+        ],
+        "region": "head",
+        "confidence": 0.66943359,
+        "internal_track_id": "body-track-38"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    },
+    {
+      "frame": 59,
+      "source_frame": "frame-059.png",
+      "source_sha256": "b343e1c98edd0471e14a3235f2dc39d983dd4db843955bb4462bb356c10f5015",
+      "time_s": 2.9499303,
+      "accepted": [
+        {
+          "box": [
+            249.843735,
+            252.949203,
+            316.406219,
+            335.800751
+          ],
+          "confidence": 0.65771484,
+          "class_id": 0
+        },
+        {
+          "box": [
+            475.20993,
+            297.128876,
+            500.727509,
+            329.121063
+          ],
+          "confidence": 0.61181641,
+          "class_id": 0
+        }
+      ],
+      "accepted_count": 2,
+      "selected": {
+        "box": [
+          249.843735,
+          252.949203,
+          316.406219,
+          335.800751
+        ],
+        "point": [
+          283.124977,
+          294.374977
+        ],
+        "region": "head",
+        "confidence": 0.65771484,
+        "internal_track_id": "body-track-38"
+      },
+      "reason": "Ready",
+      "passes": 1,
+      "last_scan_scale": 600
+    }
+  ]
+}

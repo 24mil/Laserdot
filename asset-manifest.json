@@ -1,0 +1,104 @@
+{
+  "snapshot_date": "2026-10-08",
+  "scope": "Curated documentation assets; source archives and weights are excluded.",
+  "assets": [
+    {
+      "file": "architecture.png",
+      "sha256": "36152cb39aa434fe27998a4db6021d81f450b5af8d87f9457b4c532ccd675c11",
+      "bytes": 70516,
+      "dimensions": [
+        1280,
+        620
+      ],
+      "frames": 1
+    },
+    {
+      "file": "architecture.svg",
+      "sha256": "335cff5233bbf496754e4e6fe2a64d282f1565a0ac7ddf57a7cbf5f873485b91",
+      "bytes": 7867
+    },
+    {
+      "file": "body-replay.gif",
+      "sha256": "c0471be0d1daab64859f82d5604b90eb631f4428276557ab9648b7408e977624",
+      "bytes": 2360925,
+      "dimensions": [
+        480,
+        571
+      ],
+      "frames": 19,
+      "duration_ms": 3020
+    },
+    {
+      "file": "head-replay.gif",
+      "sha256": "8a87b4ffe8f20dd5707cc8b77fa1d66d14034676b6d8ebe04987368fd4c139c5",
+      "bytes": 8876544,
+      "dimensions": [
+        480,
+        571
+      ],
+      "frames": 60,
+      "duration_ms": 3000
+    },
+    {
+      "file": "hero.png",
+      "sha256": "0dae53fa9423650626238de76e63f0834727a100e49ebafb168991a16afc517f",
+      "bytes": 19204,
+      "dimensions": [
+        1280,
+        230
+      ],
+      "frames": 1
+    },
+    {
+      "file": "hero.svg",
+      "sha256": "5b8713dc98e64ce297ad475c4cfe6aab98545ae4b76d57c591ad1f09f2e1c297",
+      "bytes": 845
+    },
+    {
+      "file": "identity-lock.gif",
+      "sha256": "aa152241fc4669b8645937ad7706a2e4181b5fe8dc839b528e68b246139b5b75",
+      "bytes": 1206238,
+      "dimensions": [
+        1280,
+        510
+      ],
+      "frames": 40,
+      "duration_ms": 7200
+    },
+    {
+      "file": "landmarks.png",
+      "sha256": "7caa91dc50d823792863f1990d800cced9b7e65d5e8159dc71f34908fa20e3d7",
+      "bytes": 336980,
+      "dimensions": [
+        1280,
+        560
+      ],
+      "frames": 1
+    },
+    {
+      "file": "training-curves.png",
+      "sha256": "3346b4ba73d67d42fd4a2ec0dfac4a0aa03703e608a66c53d3e6bd831bdf960b",
+      "bytes": 93331,
+      "dimensions": [
+        1920,
+        675
+      ],
+      "frames": 1
+    },
+    {
+      "file": "training.png",
+      "sha256": "ac990be94941e896c1dee6a6b20d3f74a798faeb6b3b69d031ec2fe78e491667",
+      "bytes": 39527,
+      "dimensions": [
+        1280,
+        410
+      ],
+      "frames": 1
+    },
+    {
+      "file": "training.svg",
+      "sha256": "e1046995746c3bca98dfe12bec89a39d69947a1136f6d0100f2b4697d952c26b",
+      "bytes": 4138
+    }
+  ]
+}

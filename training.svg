@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="410" viewBox="0 0 1280 410">
+<rect width="1280" height="410" fill="#fafafa"/>
+<text x="42" y="49" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">Training and evaluation</text>
+<rect x="42" y="90" width="258" height="153" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="60" y="126" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Starting weights</text>
+<text x="60" y="167" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Game-trained YOLO11n</text>
+<text x="60" y="194" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">COCO-pretrained pose</text>
+<line x1="300" y1="167" x2="355" y2="167" stroke="#416f94" stroke-width="2"/>
+<line x1="347.32727930146444" y1="171.70418506037592" x2="355" y2="167" stroke="#416f94" stroke-width="2"/>
+<line x1="347.32727930146444" y1="162.29581493962408" x2="355" y2="167" stroke="#416f94" stroke-width="2"/>
+<rect x="355" y="90" width="258" height="153" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="373" y="126" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Curate and label</text>
+<text x="373" y="167" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">RGB scene crops + roles</text>
+<text x="373" y="194" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">4 landmarks + visibility</text>
+<line x1="613" y1="167" x2="668" y2="167" stroke="#416f94" stroke-width="2"/>
+<line x1="660.3272793014645" y1="171.70418506037592" x2="668" y2="167" stroke="#416f94" stroke-width="2"/>
+<line x1="660.3272793014645" y1="162.29581493962408" x2="668" y2="167" stroke="#416f94" stroke-width="2"/>
+<rect x="668" y="90" width="258" height="153" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="686" y="126" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Adapt and export</text>
+<text x="686" y="167" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Specialist / pose / verifiers</text>
+<text x="686" y="194" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">PyTorch → ONNX</text>
+<line x1="926" y1="167" x2="981" y2="167" stroke="#416f94" stroke-width="2"/>
+<line x1="973.3272793014645" y1="171.70418506037592" x2="981" y2="167" stroke="#416f94" stroke-width="2"/>
+<line x1="973.3272793014645" y1="162.29581493962408" x2="981" y2="167" stroke="#416f94" stroke-width="2"/>
+<rect x="981" y="90" width="258" height="153" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="999" y="126" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Check behavior</text>
+<text x="999" y="167" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Grouped replay</text>
+<text x="999" y="194" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">+ regression checks</text>
+<text x="999" y="221" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400">Local GPU processing time</text>
+<line x1="42" y1="273" x2="1238" y2="273" stroke="#cbd1d7" stroke-width="1"/>
+<text x="42" y="314" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Head: 2,703 train / 207 validation variants</text>
+<text x="42" y="354" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400">Final RGB adaptation: 4 epochs · best checkpoint</text>
+<text x="656" y="314" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Pose: 104 reviewed records → 334 train images</text>
+<text x="656" y="354" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400">Final v6: 10 epochs · final checkpoint · repeated crops</text>
+</svg>

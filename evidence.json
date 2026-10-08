@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-08",
+  "purpose": "Sanitized extract of saved experiment reports for the portfolio. The underlying private archive is not included.",
+  "audit_method": "Read-only inspection of saved reports, recorded images and local provenance notices. No new training, live capture, serial output or application changes were performed for this extract.",
+  "qualification": {
+    "body_model_approved": false,
+    "incremental_recovery_approved_as_full_model_release": false,
+    "recorded_installation_status": "Installed as an incremental user-authorized trial",
+    "note": "Passing software regressions and incremental update checks does not establish full model accuracy or end-to-end live latency."
+  },
+  "metrics": {
+    "software_regressions": {
+      "source": "recovery_tests",
+      "tests_passed": 156,
+      "duration_seconds": 7.513,
+      "scope": "Saved unittest result for the recovery candidate; not rerun during this evidence audit."
+    },
+    "identity_lock": {
+      "source": "lock_validation",
+      "sequence_type": "Constructed temporal detector outputs",
+      "frames_per_sequence": 120,
+      "body_baseline_switches": 119,
+      "body_candidate_switches": 0,
+      "head_baseline_switches": 119,
+      "head_candidate_switches": 0,
+      "body_every_output_is_one_actual_current_target": true,
+      "head_outputs_retain_original_detection_objects": true,
+      "tracker_only_two_target_p95_ms": 0.059214985230937586,
+      "tracker_only_two_target_median_ms": 0.049699912779033184,
+      "associated_recorded_capture_frames": 152,
+      "associated_recorded_capture_accepted_enemy_frames": 0,
+      "live_two_enemy_case_verified": false,
+      "scope": "Selection and identity association only. Synthetic sequences reproduce the alternating-target bug; tracker timing excludes screen capture, inference, verification and USB."
+    },
+    "reacquisition": {
+      "source": "response_validation",
+      "sequence_type": "Synthetic 50 FPS dropout and pan sequence",
+      "baseline_extra_wait_ms": 100,
+      "candidate_extra_wait_ms": 0,
+      "baseline_first_reacquired_frame": 7,
+      "candidate_first_reacquired_frame": 2,
+      "scope": "Unnecessary selector wait after a fresh single-enemy observation. These numbers are not total input latency or model inference latency."
+    },
+    "body_processing": {
+      "source": "recovery_validation",
+      "timing_source": "recovery_timing",
+      "gpu": "NVIDIA RTX 2070",
+      "provider": "CUDAExecutionProvider",
+      "saved_scene_samples": 100,
+      "baseline_p95_ms": 27.836095000384372,
+      "candidate_p95_ms": 33.21716000209562,
+      "candidate_median_ms": 25.563350005540997,
+      "two_pass_frames": 77,
+      "game_fps_cap_independently_verified": false,
+      "scope": "Processing of saved scenes on the local GPU while the existing app and game ran. Excludes capture-to-USB and physical movement latency."
+    },
+    "body_recovery_regressions": {
+      "source": "recovery_validation",
+      "designated_negative_checks": 664,
+      "designated_negative_selections_before": 0,
+      "designated_negative_selections_after": 0,
+      "designated_teammate_checks": 1376,
+      "designated_teammate_selections_before": 0,
+      "designated_teammate_selections_after": 0,
+      "broader_background_crop_checks": 1888,
+      "broader_background_selections_before": 6,
+      "broader_background_selections_after": 6,
+      "enemy_crop_checks": 1480,
+      "enemy_selections_before": 404,
+      "enemy_selections_after": 449,
+      "correct_anatomical_checks_before": 52,
+      "correct_anatomical_checks_after": 57,
+      "lost_previously_correct_checks": 0,
+      "new_anatomical_errors": 3,
+      "hidden_region_selections_before": 14,
+      "hidden_region_selections_after": 14,
+      "unchanged_bot_slider_checks": 5,
+      "scope": "Reused development and regression images, correlated crops, multiple scales and settings. Check counts are not counts of independent people or encounters. Accepted selections do not necessarily imply correct anatomical placement."
+    },
+    "distant_bot_recovery": {
+      "source": "recovery_validation",
+      "recording": "range-detection-20261006/captures/distance-50m-20261007",
+      "frames": 18,
+      "slider_85": { "before": 0, "after": 17 },
+      "slider_100": { "before": 0, "after": 17 },
+      "slider_175": { "before": 0, "after": 2 },
+      "slider_250": { "before": 0, "after": 2 },
+      "scope": "Accepted body points on 18 correlated range-bot frames. The recording label describes the test; this is not independent broad real-agent accuracy. Chest and stomach recovery remains weak."
+    },
+    "fresh_recorded_replay": {
+      "source": "recovery_fresh_replay",
+      "frames": 154,
+      "slider_value": 85,
+      "baseline_selections": 8,
+      "candidate_selections": 8,
+      "new_selection_frames": 0,
+      "changed_existing_points": 0,
+      "serial_opened": false,
+      "scope": "Offline comparison on a fresh captured sequence, with no Arduino output. No extra acquisition benefit was observed in this sequence."
+    },
+    "head_recall_audit": {
+      "source": "response_validation",
+      "eligible_labelled_heads": 1090,
+      "raw_eligible_proposals_found": 740,
+      "survived_verification": 731,
+      "found_over_four_static_search_frames": 723,
+      "found_on_first_scan": 694,
+      "scope": "Reused labelled static scenes, not independent live accuracy. CPU FP16 replay disabled the static second-pass time budget. Raw proposals already apply confidence and coarse teammate rules."
+    }
+  },
+  "body_model_release_gates": {
+    "source": "body_release_metadata",
+    "revision": "v6-reviewed-full-context",
+    "onnx_sha256": "17cb23565cd2ffcd5a4d9e806a25345127737e271f442b5426b48e88b3da5121",
+    "approved": false,
+    "experimental_only": true,
+    "export_parity": true,
+    "gates": {
+      "head_regressions": true,
+      "body_accuracy": false,
+      "body_recall": false,
+      "teammate_background": false,
+      "hidden_regions": false,
+      "source_separation": false,
+      "evaluation_coverage": false,
+      "latency": false,
+      "bounded_live_check": false
+    },
+    "scope": "Original pose-model release metadata. Later incremental processing and regression checks do not satisfy all original model qualification requirements."
+  },
+  "limitations": [
+    "The full anatomical model remains unqualified under its original release gates.",
+    "Fourteen inherited hidden-region selections and six inherited background-crop selections remain in reused regression sets.",
+    "Three additional accepted landmarks were outside tiny labelled regions by approximately 0.10, 0.60 and 1.00 pixels and remained counted as failures.",
+    "Distance detail recovery covers only the central 192 native pixels. The head-only branch and model weights were unchanged by that recovery update.",
+    "Most missed heads in the static recall audit had no eligible raw proposal; the reacquisition repair does not improve the model's raw detections.",
+    "Screen geometry cannot guarantee identity through complete overlap or arbitrary occlusion. A model box merging two people requires a detection fix beyond target locking.",
+    "These regression images and correlated crops were reused during development. Results must not be described as independent game-wide accuracy or guaranteed zero false positives.",
+    "Recorded-frame replay demonstrates selected coordinates, not proof of in-game hits or physical output response."
+  ],
+  "provenance_records": {
+    "scope": "Reported by local source manifests and retained notices, not a comprehensive redistribution-rights determination for datasets, game artwork or pretrained weights.",
+    "mixed_dataset": {
+      "source": "mixed_provenance",
+      "publisher": "Dasun01",
+      "repository": "Hugging Face Valorant-Object-Detection-Dataset",
+      "recorded_license": "CC BY 4.0",
+      "revision": "bb397ed31b4722adb251a28e525254970d21cce6",
+      "source_sha256": "e662f25fd39dcee317bd00db6f40acdc6c5e3e2677d142816535bd0a2ab543b4",
+      "split_note": "Recording groups inferred from filename suffixes; public labels may be imperfect; not every playable agent is covered."
+    },
+    "expansion_sources": [
+      {
+        "id": "luoym",
+        "recorded_license": "Repository MIT; embedded dataset metadata declares Public Domain",
+        "revision": "6c1eaceb844b31023a6daf181d5b64916df2fe0a",
+        "included_in_expansion_training_lists": true
+      },
+      {
+        "id": "santyasa",
+        "recorded_license": "Embedded original dataset notice: CC BY 4.0",
+        "revision": "Kaggle version 1 / Roboflow version 4",
+        "included_in_expansion_training_lists": true
+      },
+      {
+        "id": "kwan",
+        "recorded_license": "Embedded original notice: CC BY-NC-SA 4.0 despite mirror MIT tag",
+        "revision": "Kaggle version 1 / Roboflow version 7",
+        "included_in_expansion_training_lists": false
+      },
+      {
+        "id": "haqi",
+        "recorded_license": "No license supplied",
+        "revision": "d3e0d71269da73dd0ec3e58130b0dc1133cb5a4f",
+        "included_in_expansion_training_lists": false
+      }
+    ],
+    "expansion_source_manifest": "expansion_sources",
+    "note": "Expansion training-list inclusion does not claim that these datasets trained the installed model. The earlier expansion candidate was a separate experiment."
+  },
+  "sources": {
+    "recovery_validation": {
+      "experiment": "detection-recovery-20261007",
+      "report": "reports/validation.json",
+      "sha256": "e4c588a2ceb5a07d7b1561f0552e9b8095fab38f61ed237db1d66b4dc288b558"
+    },
+    "recovery_tests": {
+      "experiment": "detection-recovery-20261007",
+      "report": "reports/tests.log",
+      "sha256": "0206f4d86affec2aa8c44b28fa473c4b9b9e326c4d11c87173b01b0021881eae"
+    },
+    "recovery_timing": {
+      "experiment": "detection-recovery-20261007",
+      "report": "reports/timing.json",
+      "sha256": "75d2163312eed3ccc2328f1d471d586767d175405ee5484ed2466a2ecc570350"
+    },
+    "recovery_fresh_replay": {
+      "experiment": "detection-recovery-20261007",
+      "report": "reports/fresh-replay.json",
+      "sha256": "7d24337f1b6f407eb56dae6fb51274e6f68f17fd582e7be8dc5d1d0ef229ed2b"
+    },
+    "lock_validation": {
+      "experiment": "body-lock-20261007",
+      "report": "reports/validation.json",
+      "sha256": "9ae8c3811666b1d075ecbcafb0f325e84f9a8fce6d2c6d704cf58125267cd8c1"
+    },
+    "response_validation": {
+      "experiment": "detection-response-20261007",
+      "report": "reports/validation.json",
+      "sha256": "82cc63c5513faf2d6fb81e36a2795fa5231900d1619605001de2ba0bd8c41011"
+    },
+    "body_release_metadata": {
+      "experiment": "body-aim-20261006",
+      "report": "candidate-app/models/body-landmarks.release.json",
+      "sha256": "4a7818d91df62c92a97cff68e2475d8407d7770fd610ee0890f781683d906545"
+    },
+    "mixed_provenance": {
+      "dataset": "dataset-mixed",
+      "report": "provenance.json",
+      "sha256": "97636cf3bd9ab2d0bacd7fa25fcc801c0e5ede0c66d1609888a57a9658e08659"
+    },
+    "expansion_sources": {
+      "dataset": "dataset-expanded-v1",
+      "report": "sources.json",
+      "sha256": "7051f26bb110d8c8f3fcca1293a578cd6b556af561a3726538b4bd6344cdf039"
+    }
+  }
+}

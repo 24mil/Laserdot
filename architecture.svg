@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620">
+<rect width="1280" height="620" fill="#fafafa"/>
+<text x="42" y="51" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">Runtime architecture</text>
+<text x="42" y="85" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">One fresh RGB frame; one detector branch chosen by the slider; one shared result.</text>
+<rect x="42" y="156" width="205" height="165" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="62" y="198" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Capture</text>
+<text x="62" y="239" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">DXGI / DXcam</text>
+<text x="62" y="269" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">600 × 600 RGB</text>
+<text x="62" y="299" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">fresh frames only</text>
+<rect x="290" y="125" width="284" height="122" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="312" y="167" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Head detector</text>
+<text x="312" y="203" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">Slider 10–80</text>
+<text x="312" y="233" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">YOLO11n · FP16 · 320</text>
+<rect x="290" y="272" width="284" height="122" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="312" y="314" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Pose detector</text>
+<text x="312" y="350" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">Slider 81–250</text>
+<text x="312" y="380" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">YOLO11n-pose · 4 points</text>
+<line x1="247" y1="238" x2="267" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="259.32727930146444" y1="242.70418506037592" x2="267" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="259.32727930146444" y1="233.29581493962408" x2="267" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="267" y1="185" x2="267" y2="332" stroke="#416f94" stroke-width="2"/>
+<line x1="267" y1="185" x2="290" y2="185" stroke="#416f94" stroke-width="2"/>
+<line x1="282.32727930146444" y1="189.70418506037592" x2="290" y2="185" stroke="#416f94" stroke-width="2"/>
+<line x1="282.32727930146444" y1="180.29581493962408" x2="290" y2="185" stroke="#416f94" stroke-width="2"/>
+<line x1="267" y1="332" x2="290" y2="332" stroke="#416f94" stroke-width="2"/>
+<line x1="282.32727930146444" y1="336.70418506037595" x2="290" y2="332" stroke="#416f94" stroke-width="2"/>
+<line x1="282.32727930146444" y1="327.29581493962405" x2="290" y2="332" stroke="#416f94" stroke-width="2"/>
+<rect x="618" y="156" width="259" height="165" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="640" y="198" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Verify</text>
+<text x="640" y="239" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">Small CPU classifiers</text>
+<text x="640" y="269" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">role + scenery context</text>
+<text x="640" y="299" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">visible selected region</text>
+<line x1="574" y1="185" x2="596" y2="185" stroke="#416f94" stroke-width="2"/>
+<line x1="574" y1="332" x2="596" y2="332" stroke="#416f94" stroke-width="2"/>
+<line x1="596" y1="185" x2="596" y2="332" stroke="#416f94" stroke-width="2"/>
+<line x1="596" y1="238" x2="618" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="610.3272793014645" y1="242.70418506037592" x2="618" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="610.3272793014645" y1="233.29581493962408" x2="618" y2="238" stroke="#416f94" stroke-width="2"/>
+<rect x="921" y="156" width="317" height="165" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="943" y="198" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Lock one identity</text>
+<text x="943" y="239" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">One-to-one box association</text>
+<text x="943" y="269" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">retain the visible character</text>
+<text x="943" y="299" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">never average two points</text>
+<line x1="877" y1="238" x2="921" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="913.3272793014645" y1="242.70418506037592" x2="921" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="913.3272793014645" y1="233.29581493962408" x2="921" y2="238" stroke="#416f94" stroke-width="2"/>
+<line x1="1079" y1="321" x2="1079" y2="377" stroke="#416f94" stroke-width="2"/>
+<line x1="1079" y1="377" x2="748" y2="377" stroke="#416f94" stroke-width="2"/>
+<line x1="748" y1="377" x2="748" y2="411" stroke="#416f94" stroke-width="2"/>
+<line x1="743.295814939624" y1="403.32727930146444" x2="748" y2="411" stroke="#416f94" stroke-width="2"/>
+<line x1="752.704185060376" y1="403.32727930146444" x2="748" y2="411" stroke="#416f94" stroke-width="2"/>
+<rect x="603" y="411" width="289" height="135" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="627" y="452" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">AimTarget</text>
+<text x="627" y="491" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">point · region · box</text>
+<text x="627" y="521" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">confidence · observed time</text>
+<rect x="42" y="411" width="518" height="135" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="64" y="452" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Fresh output → Leonardo</text>
+<text x="64" y="491" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">Axes + deadzone + latest-only serial queue</text>
+<text x="64" y="521" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400">Firmware merges mouse input and correction</text>
+<line x1="603" y1="476" x2="560" y2="476" stroke="#416f94" stroke-width="2"/>
+<line x1="567.6727206985355" y1="471.29581493962405" x2="560" y2="476" stroke="#416f94" stroke-width="2"/>
+<line x1="567.6727206985355" y1="480.70418506037595" x2="560" y2="476" stroke="#416f94" stroke-width="2"/>
+<rect x="921" y="463" width="317" height="83" rx="0" fill="#ffffff" stroke="#cbd1d7" stroke-width="2"/>
+<text x="945" y="505" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700">Preview + status</text>
+<line x1="892" y1="505" x2="921" y2="505" stroke="#416f94" stroke-width="2"/>
+<line x1="913.3272793014645" y1="509.70418506037595" x2="921" y2="505" stroke="#416f94" stroke-width="2"/>
+<line x1="913.3272793014645" y1="500.29581493962405" x2="921" y2="505" stroke="#416f94" stroke-width="2"/>
+<text x="42" y="593" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400">GPU: selected detector   /   CPU: contextual verification   /   No requested point or stale frame: cancel output</text>
+</svg>

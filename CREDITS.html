@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laserdot — Credits</title><style>
+:root { color-scheme:dark; --fg:#e6eefb; --muted:#aabbd3; --line:#2e405d; --accent:#68e5cb; }
+* { box-sizing:border-box } body { margin:0;background:#0c1422;color:var(--fg);font:17px/1.7 "Segoe UI",system-ui,sans-serif }
+nav { background:#101a2b;border-bottom:1px solid var(--line);padding:14px max(24px,calc((100% - 1050px)/2));display:flex;gap:25px;flex-wrap:wrap;align-items:center; }
+nav strong { letter-spacing:.12em;margin-right:auto;color:var(--accent);font-size:15px } nav a { font-size:14px }
+main { max-width:1100px;margin:38px auto 70px;padding:0 25px } a { color:var(--accent);text-decoration:none } a:hover { text-decoration:underline }
+h1,h2,h3 { line-height:1.25;color:#fff } h1 {font-size:32px} h2 { margin:48px 0 22px;font-size:29px;letter-spacing:-.02em } h3 {font-size:23px}
+p { margin:18px 0 } li { margin:12px 0 } img { max-width:100%;height:auto;display:block;border-radius:10px } p:has(>img) { margin:26px 0 }
+.table-wrap { overflow-x:auto;margin:25px 0;border:1px solid var(--line);border-radius:10px } table { border-collapse:collapse;width:100%;font-size:15px }
+th { background:#19283f;text-align:left;color:#fff } th,td { padding:15px 18px;vertical-align:top;border-bottom:1px solid var(--line) } tr:last-child td { border-bottom:0 } table img { width:100%;max-width:480px;border-radius:5px }
+code { font: .85em/1.5 Consolas,monospace;background:#19283f;padding:.15em .3em;border-radius:3px;overflow-wrap:anywhere } pre {padding:20px;background:#19283f;overflow:auto;border-radius:10px} pre code {padding:0;white-space:pre;overflow-wrap:normal}
+footer {max-width:1050px;margin:0 auto 40px;border-top:1px solid var(--line);padding-top:15px;color:var(--muted);font-size:13px}
+@media(max-width:650px) { body{font-size:16px} main{padding:0 16px;margin-top:20px} nav{padding:12px 16px;gap:15px} h2{font-size:24px} th,td{padding:10px} table{font-size:13px} }
+</style></head><body><nav><strong>LASERDOT / CASE STUDY</strong><a href="preview.html">Overview</a><a href="MODELS.html">Models</a><a href="EVALUATION.html">Evidence</a><a href="CREDITS.html">Credits</a></nav><main><h1>Credits and provenance</h1>
+<p>This is a documentation and curated-visual portfolio. It does not bundle pretrained weights, training datasets, raw recording archives, runtime dependencies or Arduino binaries. The notices below describe the local project archive; they are not a blanket license for every source asset.</p>
+<div class="table-wrap"><table>
+<tr><th>Source</th><th>Contribution / recorded notice</th></tr>
+<tr><td><a href="https://github.com/ultralytics/ultralytics">Ultralytics YOLO11</a></td><td>Detection/pose architectures and training/export software; AGPL-3.0 notices retained locally</td></tr>
+<tr><td><a href="https://github.com/sakura-lj/valorant-ai-aim/tree/ef1f29d6c0f87539df6a245a360e9a2e8a8f4fbd">sakura-lj/valorant-ai-aim</a></td><td>Initial externally game-trained YOLO11n checkpoint; pinned commit. Repository and model metadata notices differ (GPL-3.0 / AGPL-3.0); no weights redistributed here</td></tr>
+<tr><td><a href="https://github.com/microsoft/onnxruntime">ONNX Runtime</a>, <a href="https://github.com/pytorch/pytorch">PyTorch</a></td><td>Inference and training frameworks</td></tr>
+<tr><td><a href="https://github.com/ra1nty/DXcam">DXcam</a>, <a href="https://github.com/opencv/opencv">OpenCV</a></td><td>Screen capture and image processing</td></tr>
+<tr><td><a href="https://github.com/arduino-libraries/Mouse">Arduino Mouse</a>, <a href="https://github.com/felis/USB_Host_Shield_2.0">USB Host Shield Library 2.0</a></td><td>Mouse output and boot-mouse host input</td></tr>
+<tr><td>Riot Games / Valorant</td><td>Characters, environments and effects visible in the project&#x27;s own recorded game crops; no ownership or affiliation claimed</td></tr>
+</table></div>
+<h2>Dataset records</h2>
+<p>The archive preserves source notices, revisions and recording-group information. Public source labels can be imperfect; exact agent/pose/distance/ability coverage is not comprehensively annotated.</p>
+<ul>
+<li><strong><a href="https://huggingface.co/datasets/Dasun01/Valorant-Object-Detection-Dataset">Dasun01 / Valorant-Object-Detection-Dataset</a></strong>: revision <code>bb397ed31b4722adb251a28e525254970d21cce6</code>; local provenance records <a href="https://universe.roboflow.com/valorant-enemy-enemy-head-detection/valorant-iuuzs/dataset/2">original Roboflow Valorant enemy/head v2</a> and CC BY 4.0.</li>
+<li><strong><a href="https://github.com/luoym525/Valorant-Player-Detection">luoym525 / Valorant-Player-Detection</a></strong>: revision <code>6c1eaceb844b31023a6daf181d5b64916df2fe0a</code>; repository MIT notice, embedded dataset Public Domain notice. Imported data overlaps Santyasa; deduplication and original notices are retained.</li>
+<li><strong><a href="https://universe.roboflow.com/alfin-scifo/santyasa/dataset/4">Santyasa v4 / alfin scifo</a></strong>, mirrored by JustinLuu: embedded CC BY 4.0 notice retained.</li>
+<li><strong>KwanLi object-detection2 v7</strong>: embedded CC BY-NC-SA 4.0 disagrees with a mirror MIT tag; excluded from training export.</li>
+<li><strong>haqi001 Hugging Face data</strong>: no supplied license; excluded from training export.</li>
+<li><strong>Local game recordings and reviewed labels</strong>: project-specific debugging/training material. Related crops and augmentations stay in their source partition; generated image counts are not independent session counts.</li>
+</ul>
+<h2>Development attribution</h2>
+<p>The project was iteratively directed and tested on local hardware, using pretrained models and existing libraries. AI-assisted coding and research contributed to implementation, investigation, tests and this documentation. The portfolio distinguishes pretrained components from local adaptations and reports measured limitations alongside results.</p>
+<p>Diagrams and chart layouts were created for this showcase. Recorded imagery retains its game/source attribution. No repository-wide MIT/other license is asserted over third-party models or imagery.</p></main><footer>Audited 8 October 2026 · Local documentation preview · No tracker, capture or hardware connection</footer></body></html>

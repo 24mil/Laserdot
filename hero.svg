@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="230" viewBox="0 0 1280 230">
+<rect width="1280" height="230" fill="#fafafa"/>
+<text x="42" y="77" fill="#24292f" font-family="Segoe UI,Arial,sans-serif" font-size="42" font-weight="700">Laserdot</text>
+<text x="42" y="125" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="400">RGB screen tracking with anatomical landmarks and Arduino integration.</text>
+<line x1="42" y1="153" x2="1238" y2="153" stroke="#cbd1d7" stroke-width="1"/>
+<text x="42" y="191" fill="#416f94" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400">Local computer vision</text>
+<text x="268" y="191" fill="#57616b" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400">Python · PyTorch · ONNX Runtime · Arduino C++</text>
+</svg>

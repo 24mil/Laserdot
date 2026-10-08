@@ -1,0 +1,65 @@
+{
+  "schema": "laserdot-head-replay-config-v1",
+  "source_sequence": "03-normal-front-right-attempt02",
+  "source_manifest_sha256": "501adb9c316241b092dbe7a0d38577498f3a87d09460056f507e0e6a391c1fdb",
+  "frame_count": 60,
+  "frame_size": [
+    600,
+    600
+  ],
+  "capture_target_hz": 20,
+  "model": "rgb-candidate-fp16.onnx",
+  "model_sha256": "0d87c53ef0f791060a4b818cbd8fe304125babe47e4bfb08b3841aefe2a2e1fe",
+  "role_verifier": "role-verifier.onnx",
+  "role_verifier_sha256": "dd0942dc6e5fac7ef08b92346ffebcba759b8e41600937bc7796cd260ef8c4d8",
+  "source_config": {
+    "gpu": false,
+    "grayscale": false,
+    "fast": true,
+    "search_mode": "original",
+    "radius": 227,
+    "confidence": 0.3,
+    "detail_pass": false,
+    "overview_model": null,
+    "pyramid": false,
+    "cuda_graph": false,
+    "role_confidence": 0.5,
+    "refine_strong": true,
+    "aim_point": 50
+  },
+  "warmup": {
+    "frames": 3,
+    "shape": [
+      600,
+      600,
+      3
+    ],
+    "value": 114
+  },
+  "offline_adaptation": {
+    "fast_budget_disabled": true,
+    "production_fast_budget_ms": 20,
+    "reason": "CPU inference speed must not suppress the second search pass in this offline replay.",
+    "unchanged": "Weights, RGB preprocessing, search scheduling, verifier thresholds, tracker and head slider mapping."
+  },
+  "scope": "Recorded RGB scene replay with current installed FP16 head weights and verifier. No capture, serial, Arduino output or app-state change. Not a latency or accuracy benchmark.",
+  "versions": {
+    "numpy": "2.5.3",
+    "onnxruntime-gpu": "1.23.2",
+    "Pillow": "12.3.0"
+  },
+  "app_source_sha256": {
+    "detector.py": "e378719211427ea846a37d1c2c0337fe4529d10ef7402cc1a6e148bbc7f73c18",
+    "detector_base.py": "b50f35b899edaeedfdbb66036cec16c36924820e3260067d519c012f8c7af16f",
+    "detector_refined.py": "54164b94222aee406f15bd8a712e9c5e9fff12d50c1a643f365df465d0f26924",
+    "candidate_verifier.py": "0d25ccebdeafac4b7ad65511e2d0684e4e2944e6a4ad11528153672f81303b24",
+    "verifier_features.py": "33c3fd24db8fbd58fcfd1b839ad24371ef72d3498fc350c7024f33c6bf814484",
+    "friendly_markers.py": "4068156b80a260e70001089fd9d6627155d2927a1d5a17add0bda70d62d1e408",
+    "aim_target.py": "aa794408553f6fda4023d665678db86c76f299dcc904743032615ed6cd2d245a",
+    "aim_policy.py": "ba3c5a1c5856d10b484ef469d88473029fcd21df9f2e0d682fffdb96e86d8182"
+  },
+  "detector_provider": "CPUExecutionProvider",
+  "verifier_provider": "CPUExecutionProvider",
+  "input_dtype": "tensor(float16)",
+  "elapsed_cpu_replay_s": 3.469
+}

@@ -1,0 +1,192 @@
+{
+  "source": "detection-recovery-20261007/reports/fresh-replay.json",
+  "scope": "Selected contiguous recorded frames; approximate recorded timing quantized to GIF 10ms ticks. Not total inference latency.",
+  "frames": [
+    {
+      "frame": 48,
+      "time_s": 0.0,
+      "target": null
+    },
+    {
+      "frame": 49,
+      "time_s": 0.157,
+      "target": null
+    },
+    {
+      "frame": 50,
+      "time_s": 0.313,
+      "target": null
+    },
+    {
+      "frame": 51,
+      "time_s": 0.469,
+      "target": null
+    },
+    {
+      "frame": 52,
+      "time_s": 0.641,
+      "target": {
+        "box": [
+          131.32081604003906,
+          288.4233703613281,
+          223.70510864257812,
+          538.6891479492188
+        ],
+        "point": [
+          157.18789291381836,
+          332.63299560546875
+        ],
+        "region": "lower head / neck",
+        "confidence": 0.8182359337806702
+      }
+    },
+    {
+      "frame": 53,
+      "time_s": 0.797,
+      "target": {
+        "box": [
+          245.08018493652344,
+          224.9752655029297,
+          363.1900939941406,
+          506.3746643066406
+        ],
+        "point": [
+          308.0421371459961,
+          270.91637420654297
+        ],
+        "region": "lower head / neck",
+        "confidence": 0.8191845417022705
+      }
+    },
+    {
+      "frame": 54,
+      "time_s": 0.953,
+      "target": {
+        "box": [
+          190.24046325683594,
+          244.2386474609375,
+          337.8305358886719,
+          558.3831787109375
+        ],
+        "point": [
+          264.65128326416016,
+          287.4898986816406
+        ],
+        "region": "lower head / neck",
+        "confidence": 0.8176715970039368
+      }
+    },
+    {
+      "frame": 55,
+      "time_s": 1.11,
+      "target": {
+        "box": [
+          179.73651123046875,
+          268.4925231933594,
+          358.6432189941406,
+          600.0
+        ],
+        "point": [
+          248.27621841430664,
+          315.2821502685547
+        ],
+        "region": "lower head / neck",
+        "confidence": 0.7525820136070251
+      }
+    },
+    {
+      "frame": 56,
+      "time_s": 1.266,
+      "target": null
+    },
+    {
+      "frame": 57,
+      "time_s": 1.422,
+      "target": null
+    },
+    {
+      "frame": 58,
+      "time_s": 1.578,
+      "target": null
+    },
+    {
+      "frame": 59,
+      "time_s": 1.735,
+      "target": {
+        "box": [
+          323.9184265136719,
+          218.0819549560547,
+          396.78204345703125,
+          422.9174499511719
+        ],
+        "point": [
+          358.8193359375,
+          252.93024444580078
+        ],
+        "region": "lower head / neck",
+        "confidence": 0.7955405712127686
+      }
+    },
+    {
+      "frame": 60,
+      "time_s": 1.891,
+      "target": {
+        "box": [
+          274.3919982910156,
+          269.51275634765625,
+          363.78363037109375,
+          480.55364990234375
+        ],
+        "point": [
+          310.31034088134766,
+          306.6957473754883
+        ],
+        "region": "lower head / neck",
+        "confidence": 0.8057538866996765
+      }
+    },
+    {
+      "frame": 61,
+      "time_s": 2.063,
+      "target": {
+        "box": [
+          224.49317932128906,
+          275.8716735839844,
+          337.0716247558594,
+          508.62091064453125
+        ],
+        "point": [
+          282.23291778564453,
+          311.5223922729492
+        ],
+        "region": "lower head / neck",
+        "confidence": 0.7552369236946106
+      }
+    },
+    {
+      "frame": 62,
+      "time_s": 2.219,
+      "target": null
+    },
+    {
+      "frame": 63,
+      "time_s": 2.375,
+      "target": null
+    },
+    {
+      "frame": 64,
+      "time_s": 2.532,
+      "target": null
+    },
+    {
+      "frame": 65,
+      "time_s": 2.688,
+      "target": null
+    },
+    {
+      "frame": 66,
+      "time_s": 2.844,
+      "target": null
+    }
+  ]
+}

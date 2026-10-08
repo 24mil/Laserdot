@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laserdot — Overview</title><style>
+:root { color-scheme:dark; --fg:#e6eefb; --muted:#aabbd3; --line:#2e405d; --accent:#68e5cb; }
+* { box-sizing:border-box } body { margin:0;background:#0c1422;color:var(--fg);font:17px/1.7 "Segoe UI",system-ui,sans-serif }
+nav { background:#101a2b;border-bottom:1px solid var(--line);padding:14px max(24px,calc((100% - 1050px)/2));display:flex;gap:25px;flex-wrap:wrap;align-items:center; }
+nav strong { letter-spacing:.12em;margin-right:auto;color:var(--accent);font-size:15px } nav a { font-size:14px }
+main { max-width:1100px;margin:38px auto 70px;padding:0 25px } a { color:var(--accent);text-decoration:none } a:hover { text-decoration:underline }
+h1,h2,h3 { line-height:1.25;color:#fff } h1 {font-size:32px} h2 { margin:48px 0 22px;font-size:29px;letter-spacing:-.02em } h3 {font-size:23px}
+p { margin:18px 0 } li { margin:12px 0 } img { max-width:100%;height:auto;display:block;border-radius:10px } p:has(>img) { margin:26px 0 }
+.table-wrap { overflow-x:auto;margin:25px 0;border:1px solid var(--line);border-radius:10px } table { border-collapse:collapse;width:100%;font-size:15px }
+th { background:#19283f;text-align:left;color:#fff } th,td { padding:15px 18px;vertical-align:top;border-bottom:1px solid var(--line) } tr:last-child td { border-bottom:0 } table img { width:100%;max-width:480px;border-radius:5px }
+code { font: .85em/1.5 Consolas,monospace;background:#19283f;padding:.15em .3em;border-radius:3px;overflow-wrap:anywhere } pre {padding:20px;background:#19283f;overflow:auto;border-radius:10px} pre code {padding:0;white-space:pre;overflow-wrap:normal}
+footer {max-width:1050px;margin:0 auto 40px;border-top:1px solid var(--line);padding-top:15px;color:var(--muted);font-size:13px}
+@media(max-width:650px) { body{font-size:16px} main{padding:0 16px;margin-top:20px} nav{padding:12px 16px;gap:15px} h2{font-size:24px} th,td{padding:10px} table{font-size:13px} }
+</style></head><body><nav><strong>LASERDOT / CASE STUDY</strong><a href="preview.html">Overview</a><a href="MODELS.html">Models</a><a href="EVALUATION.html">Evidence</a><a href="CREDITS.html">Credits</a></nav><main><p><img src="hero.png" alt="Laserdot — local computer vision and Arduino tracking" loading="lazy"></p>
+<p>Laserdot tracks a selected anatomical point in Valorant practice/custom-game scenes. Python processes RGB screen crops locally; an Arduino Leonardo and USB host shield combine mouse input with the resulting correction.</p>
+<p><strong>Python · PyTorch · Ultralytics YOLO11 · ONNX Runtime/CUDA · Tkinter · Arduino C++</strong></p>
+<p>Audited <strong>8 October 2026</strong>. <a href="MODELS.html">Model details</a> · <a href="EVALUATION.html">Evidence</a> · <a href="CREDITS.html">Credits</a></p>
+<h2>The problem</h2>
+<p>A colour-based prototype confused shoulders, walls and effects with heads. AI introduced different problems: teammate classification, small-target recall, selection between nearby characters and stale frames under load. The engineering work connected detection, anatomy, identity and output timing.</p>
+<h2>Tracker in action</h2>
+<div class="table-wrap"><table>
+<tr><th>Head branch</th><th>Body branch</th></tr>
+<tr><td><img src="head-replay.gif" alt="Recorded head predictions and the selected point" loading="lazy"></td><td><img src="body-replay.gif" alt="Recorded real-agent body inference, including rejected frames" loading="lazy"></td></tr>
+<tr><td>Current head model and verifier replayed on 60 recorded frames. Teal boxes are accepted heads; gold marks the selected point. CPU replay disables the search time budget.</td><td>A contiguous recorded real-agent sequence, replayed at slider 85. Gold marks the accepted lower-head/neck point; missing observations leave no marker.</td></tr>
+</table></div>
+<p>Both use approximate recorded timing, quantized to GIF ticks. They demonstrate observations, not inference speed, successful shots or general accuracy. Arduino output was disabled.</p>
+<p><img src="landmarks.png" alt="Three genuine pose outputs on one recorded range frame" loading="lazy"></p>
+<p>The slider preserves <strong>10–80 head-box placement</strong>, then uses pose landmarks: <strong>100 neck, 175 chest, 250 stomach</strong>. Intermediate values interpolate within one character. Above are actual v6 outputs on one saved frame: screen-space points, not engine hitboxes.</p>
+<h2>Architecture</h2>
+<p><img src="architecture.png" alt="Capture, selected detector, verification, identity, shared result and fresh output" loading="lazy"></p>
+<ul>
+<li><strong>Select a region.</strong> Body mode can select a visible chest without detecting a head. Missing/rejected requested landmarks cancel output without substituting the head.</li>
+<li><strong>Verify context.</strong> Small CPU classifiers check character/role/background evidence. Explicit friendly UI and colour cues add rejection checks; the pipeline is not entirely colour-rule-free.</li>
+<li><strong>Keep one identity.</strong> Box geometry associates candidates one-to-one. A visible lock wins over a nearer neighbour. Missing observations stop movement while identity is remembered briefly.</li>
+<li><strong>Use fresh results.</strong> Preview, status and movement consume one <code>AimTarget</code>. Latest-only queues and age checks prevent a backlog of old observations; branch changes cancel pending output.</li>
+</ul>
+<p><img src="identity-lock.gif" alt="Synthetic before-and-after identity-lock regression" loading="lazy"></p>
+<p>This <strong>constructed</strong> regression alternates which character is nearer: <strong>119 switches → 0 over 120 frames</strong>. Outputs remain one character&#x27;s current point. Playback is slowed; live two-enemy behavior was not validated.</p>
+<h2>Models and training</h2>
+<p><img src="training.png" alt="Starting weights, reviewed data, adaptation, export and evaluation" loading="lazy"></p>
+<div class="table-wrap"><table>
+<tr><th>Detector</th><th>Parameters</th><th>Starting point</th><th>Runtime</th></tr>
+<tr><td>Head specialist — YOLO11n</td><td>2,590,230</td><td>Externally game-trained nano checkpoint, followed by local adaptations</td><td>RGB 320, FP16 ONNX, CUDA</td></tr>
+<tr><td>Four-landmark body — YOLO11n-pose</td><td>2,662,458</td><td>COCO-pretrained pose checkpoint; adapted to enemy/teammate roles and four landmarks</td><td>RGB 320, FP32 ONNX, CUDA</td></tr>
+</table></div>
+<p>Context verifiers add <strong>862,246</strong> head, <strong>468,579</strong> primary body and <strong>337,507</strong> secondary body parameters. Related crops retain their recording-group partition. Counts include repeated/augmented variants. The <a href="MODELS.html">model card</a> covers lineage, losses, labels and selection.</p>
+<p><img src="training-curves.png" alt="Actual final-stage head and pose training-loss curves" loading="lazy"></p>
+<h2>Measured results and limits</h2>
+<div class="table-wrap"><table>
+<tr><th>Saved result</th><th>What it measures</th></tr>
+<tr><td><strong>156 regression tests passed</strong></td><td>Software behavior in the recorded recovery test run</td></tr>
+<tr><td><strong>33.2 ms p95</strong> on RTX 2070</td><td>Body processing on 100 saved-scene samples; excludes capture-to-USB latency</td></tr>
+<tr><td><strong>0 selections / 664 designated negative checks</strong></td><td>One reused regression set; broader background failures remain</td></tr>
+</table></div>
+<p>The body model <strong>has not passed full qualification</strong>. Distant chest/stomach recall, concealed-region rejection and background cases remain unresolved. Training-list metrics are not held-out accuracy. <a href="EVALUATION.html">Exact scopes and failures</a>.</p>
+<p>Development combined recorded-scene debugging, reviewed labels, transfer learning, hardware integration and regression tests, with AI-assisted coding/research. Weights, raw datasets and runtime binaries are excluded from this documentation showcase. Open <a href="preview.html">preview.html</a> locally for the presentation.</p></main><footer>Audited 8 October 2026 · Local documentation preview · No tracker, capture or hardware connection</footer></body></html>

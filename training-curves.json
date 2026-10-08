@@ -1,0 +1,73 @@
+{
+  "scope": "Final-stage training loss only; no generalization claim.",
+  "series": {
+    "head_box": {
+      "source": "experiments/rgb-head-v4/fit/results.csv",
+      "source_sha256": "5159fb46611fadd91d979381e5595d2bea04bf0fc26204aec2535314f326e033",
+      "values": [
+        {
+          "epoch": 1,
+          "loss": 2.54751
+        },
+        {
+          "epoch": 2,
+          "loss": 2.4386
+        },
+        {
+          "epoch": 3,
+          "loss": 2.38654
+        },
+        {
+          "epoch": 4,
+          "loss": 2.37709
+        }
+      ]
+    },
+    "body_pose": {
+      "source": "experiments/body-aim-20261006/v6/fit/reviewed-full-context/results.csv",
+      "source_sha256": "20814cb8928fc274a46b736987147c602fe8eb27556ab192ff6adb447ff0dc6d",
+      "values": [
+        {
+          "epoch": 1,
+          "loss": 2.98903
+        },
+        {
+          "epoch": 2,
+          "loss": 2.47203
+        },
+        {
+          "epoch": 3,
+          "loss": 2.24936
+        },
+        {
+          "epoch": 4,
+          "loss": 2.16696
+        },
+        {
+          "epoch": 5,
+          "loss": 1.94922
+        },
+        {
+          "epoch": 6,
+          "loss": 1.70757
+        },
+        {
+          "epoch": 7,
+          "loss": 1.79057
+        },
+        {
+          "epoch": 8,
+          "loss": 1.5622
+        },
+        {
+          "epoch": 9,
+          "loss": 1.46971
+        },
+        {
+          "epoch": 10,
+          "loss": 1.47066
+        }
+      ]
+    }
+  }
+}
